@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Made with a brain and some milk</copyright>
-    <lastBuildDate>Wed, 09 Sep 2020 21:16:12 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2020 16:02:39 -0400</lastBuildDate>
     
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Experience With Endeavour OS</title>
+      <link>/posts/my-experience-with-endeavour-os/</link>
+      <pubDate>Thu, 10 Sep 2020 16:02:39 -0400</pubDate>
+      
+      <guid>/posts/my-experience-with-endeavour-os/</guid>
+      <description>A few weeks ago, i decided to install Endeavour OS, an Arch Linux based distro, on my laptop. I was bored of Kubuntu, and it had issues with my CPU since it was not well supported by the LTS kernel. In general, i also prefer getting updates faster. All of this made me want to switch to a rolling release distro.
+The first distro that i tried to install was Manjaro, it was everything i wanted, however, the installer would freeze, something that holded me back from trying it (it did work on a VM).</description>
+      
+    </item>
     
     <item>
       <title>Python vs JavaScript</title>
