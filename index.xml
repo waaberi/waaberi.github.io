@@ -22,5 +22,15 @@
       
     </item>
     
+    <item>
+      <title>Who am i?</title>
+      <link>/whoami/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/whoami/</guid>
+      <description>To be done soon</description>
+      
+    </item>
+    
   </channel>
 </rss>

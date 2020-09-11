@@ -11,4 +11,5 @@
     <loc>http://localhost:1313/posts/python-vs-js/</loc><lastmod>2020-09-09T21:16:12-04:00</lastmod></url><url>
     <loc>http://localhost:1313/posts/welcome-to-my-blog/</loc><lastmod>2020-09-09T19:59:19-04:00</lastmod></url><url>
     <loc>http://localhost:1313/posts/why-all-the-hate-for-js/</loc><lastmod>2020-09-09T19:32:46-04:00</lastmod></url><url>
-    <loc>http://localhost:1313/categories/</loc></url></urlset>
+    <loc>http://localhost:1313/categories/</loc></url><url>
+    <loc>http://localhost:1313/whoami/</loc></url></urlset>
