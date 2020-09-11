@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on Waaberi&#39;s Hub</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on Waaberi&#39;s Hub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Made with a brain and some milk</copyright>
+    <lastBuildDate>Wed, 09 Sep 2020 21:16:12 -0400</lastBuildDate>
+    
+        <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python vs JavaScript</title>
+      <link>/posts/python-vs-js/</link>
+      <pubDate>Wed, 09 Sep 2020 21:16:12 -0400</pubDate>
+      
+      <guid>/posts/python-vs-js/</guid>
+      <description>Both languages are very good, but what should you use for what, and why? That&amp;rsquo;s what i will be discussing in this post. I&amp;rsquo;d like to thank ZaphireHacks for bringing this up, i already had this debate before, but i think it&amp;rsquo;s important to have it again.
+I will be rating JS and Python with 3 points, which are:
+ Performance Functionality and Difficulty  First, i think it&amp;rsquo;s important to define what we mean by Python and JavaScript, because for some points, the language itself can&amp;rsquo;t just define that because there are multiple implementations.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
