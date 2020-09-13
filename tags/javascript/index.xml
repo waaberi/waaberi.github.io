@@ -32,7 +32,7 @@ I will be rating JS and Python with 3 points, which are:
       <guid>/posts/why-all-the-hate-for-js/</guid>
       <description>Hello World! I just wanted to ask you a question, why do so many people hate JS? Btw this is a test article, i&amp;rsquo;ll add stuff later.
 Express server: const express = require(&amp;#34;express&amp;#34;) const app = express(); app.get(&amp;#34;/&amp;#34;, (req, res) =&amp;gt; { res.send(&amp;#34;Are you da legendary captain milk?&amp;#34;) }) app.listen(process.env.PORT || 3000, () =&amp;gt; console.log(&amp;#34;Server up!&amp;#34;)) 
-Test test</description>
+Test test test test x2</description>
       
     </item>
     
