@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Made with a brain and some milk</copyright>
-    <lastBuildDate>Thu, 10 Sep 2020 16:02:39 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2020 14:11:05 -0400</lastBuildDate>
     
         <atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubuntu Installation Guide</title>
+      <link>/posts/kubuntu-distro/</link>
+      <pubDate>Sun, 13 Sep 2020 14:11:05 -0400</pubDate>
+      
+      <guid>/posts/kubuntu-distro/</guid>
+      <description>In this post, i will show you some Linux basics and a little bit about Kubuntu. Kubuntu is a Linux distribution that is basically Ubuntu but with KDE Plasma as the desktop environment (like a GUI). I&amp;rsquo;d like to thank Zera since he wanted me to make a post about some debian based distro.
+Installation The Kubuntu installation is pretty straight forward, you go to the Kubuntu Website and you download the latest LTS version.</description>
+      
+    </item>
     
     <item>
       <title>My Experience With Endeavour OS</title>

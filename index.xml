@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Made with a brain and some milk</copyright>
-    <lastBuildDate>Thu, 10 Sep 2020 16:02:39 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2020 14:11:05 -0400</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Posts</title>
       <link>/posts/</link>
-      <pubDate>Thu, 10 Sep 2020 16:02:39 -0400</pubDate>
+      <pubDate>Sun, 13 Sep 2020 14:11:05 -0400</pubDate>
       
       <guid>/posts/</guid>
       <description></description>
@@ -28,7 +28,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/whoami/</guid>
-      <description>To be done soon</description>
+      <description>I&amp;rsquo;m a student at school, and I love computers. In this website, I will post articles about things I like, such as programming and linux. This page is not done yet, i&amp;rsquo;m not sure what to add.</description>
       
     </item>
     
