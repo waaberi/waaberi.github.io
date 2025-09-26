@@ -1,3 +1,9 @@
 baseURL = 'https://waaberi.dev/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Waaberi Ibrahim'
+paginate = 10
+
+[params]
+    centerTheme = true
+    themeColor = 'orange'
+    description = 'Testing for now'
