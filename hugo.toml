@@ -1,4 +1,4 @@
-baseurl = "/"
+baseURL = "https://waaberi.dev/"
 relativeURLs = false
 canonifyURLs = true
 languageCode = "en-us"
