@@ -32,10 +32,10 @@ jobs:
         with:
           extended: true
 
-      # Build for custom domain since DNS is properly configured
+      # Build with relative URLs to work with both domains
       - name: Build
         run: |
-          hugo --minify --baseURL "https://${{ env.CUSTOM_DOMAIN }}/"
+          hugo --minify
           echo "${{ env.CUSTOM_DOMAIN }}" > ./public/CNAME
 
       # Let GitHub know we’re deploying a Pages site (sets correct artifact expectations)

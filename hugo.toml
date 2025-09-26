@@ -1,4 +1,6 @@
-baseurl = "https://waaberi.dev/"
+baseurl = "/"
+relativeURLs = true
+canonifyURLs = false
 languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
