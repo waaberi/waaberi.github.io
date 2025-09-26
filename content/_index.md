@@ -1,4 +1,4 @@
 ---
 title: "Hello, world"
 ---
-Welcome to my site. If you can read this, GitHub Pages + Hugo + Terminal theme is working 🎉.
+Welcome to my website. More content coming soon.

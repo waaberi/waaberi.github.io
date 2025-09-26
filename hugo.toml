@@ -76,7 +76,7 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Waaberi"
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -94,7 +94,7 @@ pagination.pagerSize = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "Waaberi"
         logoHomeLink = "/"
 
       [languages.en.menu]
@@ -103,6 +103,6 @@ pagination.pagerSize = 5
           name = "About"
           url = "/about"
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+          identifier = "resume"
+          name = "Resume"
+          url = "/resume.pdf"
