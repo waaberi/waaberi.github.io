@@ -24,17 +24,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true      # fetch theme if it's a submodule
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          extended: true        # SCSS support (most themes need this)
-          # hugo-version: latest  # (optional) pin a version if you want
+          extended: true
 
+      # Ensure the site is built for your custom domain (prevents asset/URL 404s on Pages)
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "https://${{ env.CUSTOM_DOMAIN }}/"
+
+      # Optional: ship a CNAME file inside the artifact (Pages binds the domain via Settings,
+      # but having the file is harmless and some tooling expects it)
+      - name: (Optional) Add CNAME to artifact
+        run: echo "${{ env.CUSTOM_DOMAIN }}" > ./public/CNAME
+
+      # Let GitHub know we’re deploying a Pages site (sets correct artifact expectations)
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -45,7 +54,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-pages                # must be exactly this name
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
