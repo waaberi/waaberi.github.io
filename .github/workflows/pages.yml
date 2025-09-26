@@ -36,6 +36,7 @@ jobs:
       - name: Build
         run: |
           hugo --minify
+          echo "${{ env.CUSTOM_DOMAIN }}" > ./public/CNAME
 
       # Let GitHub know we’re deploying a Pages site (sets correct artifact expectations)
       - name: Configure Pages
