@@ -32,13 +32,11 @@ jobs:
         with:
           extended: true
 
-      # Build for GitHub Pages first to ensure it works, custom domain will redirect
+      # Build for custom domain since DNS is properly configured
       - name: Build
-        run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/"
-
-      # Add CNAME file for custom domain
-      - name: Add CNAME to artifact
-        run: echo "${{ env.CUSTOM_DOMAIN }}" > ./public/CNAME
+        run: |
+          hugo --minify --baseURL "https://${{ env.CUSTOM_DOMAIN }}/"
+          echo "${{ env.CUSTOM_DOMAIN }}" > ./public/CNAME
 
       # Let GitHub know we’re deploying a Pages site (sets correct artifact expectations)
       - name: Configure Pages
