@@ -34,4 +34,4 @@ waaberi = {
 
 ---
 
-Check out my [projects](/posts), learn more [about me](/about), or grab my [resume](/resume.pdf).
+Learn more [about me](/about), or grab my [resume](/resume.pdf).
