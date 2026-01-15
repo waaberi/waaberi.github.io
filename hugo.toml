@@ -17,7 +17,7 @@ pagination.pagerSize = 5
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -26,7 +26,7 @@ pagination.pagerSize = 5
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
   # then the file will be used as a cover automatically.
@@ -79,9 +79,9 @@ pagination.pagerSize = 5
     title = "Waaberi"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
+      subtitle = "Software Engineering Student | Full-Stack Dev | Cybersecurity Enthusiast"
       owner = ""
-      keywords = ""
+      keywords = "software engineering, cybersecurity, web development, python, react, uottawa"
       copyright = ""
       menuMore = "Show more"
       readMore = "Read more"
