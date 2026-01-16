@@ -1,0 +1,5 @@
+<ul class="menu menu--desktop menu--language-selector">
+  {{ range .Translations }}
+    <li class="menu__trigger"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+  {{ end }}
+</ul>

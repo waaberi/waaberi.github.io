@@ -1,7 +1,8 @@
 baseURL = "https://waaberi.dev/"
 relativeURLs = false
 canonifyURLs = true
-languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
@@ -20,7 +21,7 @@ pagination.pagerSize = 5
   showMenuItems = 3
 
   # show selector to switch language
-  showLanguageSelector = false
+  showLanguageSelector = true
 
   # set theme to full screen width
   fullWidthTheme = false
@@ -106,3 +107,37 @@ pagination.pagerSize = 5
           identifier = "resume"
           name = "Resume"
           url = "/resume.pdf"
+
+  [languages.fr]
+    languageName = "Français"
+    title = "Waaberi"
+    weight = 2
+
+    [languages.fr.params]
+      subtitle = "Étudiant en génie logiciel | Développeur Full-Stack | Passionné de cybersécurité"
+      owner = ""
+      keywords = "génie logiciel, cybersécurité, développement web, python, react, uottawa"
+      copyright = ""
+      menuMore = "Voir plus"
+      readMore = "Lire la suite"
+      readOtherPosts = "Lire d'autres articles"
+      newerPosts = "Articles plus récents"
+      olderPosts = "Articles plus anciens"
+      missingContentMessage = "Page introuvable..."
+      missingBackButtonLabel = "Retour à l'accueil"
+      minuteReadingTime = "min de lecture"
+      words = "mots"
+
+      [languages.fr.params.logo]
+        logoText = "Waaberi"
+        logoHomeLink = "/fr/"
+
+      [languages.fr.menu]
+        [[languages.fr.menu.main]]
+          identifier = "about"
+          name = "À propos"
+          url = "/fr/about"
+        [[languages.fr.menu.main]]
+          identifier = "resume"
+          name = "CV"
+          url = "/resume_fr.pdf"
