@@ -23,6 +23,10 @@ pagination.pagerSize = 5
   # show selector to switch language
   showLanguageSelector = true
 
+  # Social/profile links (set to your profile URLs)
+  github = "https://github.com/YOUR_USERNAME"
+  linkedin = "https://www.linkedin.com/in/YOUR_USERNAME"
+
   # set theme to full screen width
   fullWidthTheme = false
 

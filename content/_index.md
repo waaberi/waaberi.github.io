@@ -12,22 +12,27 @@ $ cat interests.txt
 - Cybersecurity & penetration testing
 - Competitive programming & hackathons
 - Building tools that solve real problems
+- Data science & machine learning
+- Hardware and embedded development
 ```
 
 ## Recent highlights
 
-- 🥇 **1st Place** - Qiskit Fall Fest 2025 Hackathon
-- 🥈 **2nd Place** - uOttawa Computer Chess Hackathon  
-- 🥇 **1st Place** - uOttawa Cyber Range FlagForce CTF
+- 👨‍💻 **Software Developer & Technical Coordinator** @ IEEE uOttawa (Present): delivered a web security workshop to **50 participants** and now building the branch homepage with Payload CMS + Next.js
+- 🥇 **1st Place** - IEEE uOttawa x HackTheBox Capture The Flag (2026)
+- 🥇 **1st Place** - Qiskit Fall Fest Hackathon (2025)
+- 🥈 **2nd Place** - uOttawa Computer Chess Hackathon (2025)
+- 🥇 **1st Place** - uOttawa Cyber Range FlagForce CTF (2025)
 - 🎓 **Ranked 2nd/307** in ITI1120 (Intro to Computing I)
 
 ## Quick stats
 
 ```json
 waaberi = {
-    "languages": ["Python", "C/C++", "Java", "JavaScript", "Go", "C#"],
+    "current_role": "Software Developer & Technical Coordinator @ IEEE uOttawa",
+    "languages": ["Python", "Java", "C", "C++", "Go", "TypeScript", "JavaScript", "SQL", "C#"],
     "learning_now": ["Data Structures and Algorithms", "Functional Programming"],
-    "looking_for": "Summer 2026 Co-op",
+    "looking_for": "Software Engineering Co-op opportunities",
     "fun_fact": "The Colonel By basement is my 2nd home"
 }
 ```

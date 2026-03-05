@@ -14,6 +14,16 @@
           </li>
         {{ end }}
       {{ end }}
+      {{/* Social links for mobile menu */}}
+      {{ if or $.Site.Params.github $.Site.Params.linkedin }}
+        <li class="menu__divider"></li>
+        {{ if $.Site.Params.github }}
+          <li><a href="{{ $.Site.Params.github }}" target="_blank" rel="noopener">GitHub</a></li>
+        {{ end }}
+        {{ if $.Site.Params.linkedin }}
+          <li><a href="{{ $.Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+        {{ end }}
+      {{ end }}
     </ul>
   </li>
 </ul>

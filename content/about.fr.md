@@ -20,6 +20,11 @@ J'ai une expérience pratique en tests de pénétration et en évaluation de vul
 
 ## Expériences marquantes
 
+### Ingénieur logiciel et coordinateur technique @ IEEE uOttawa Student Branch (Jan. 2026 -- Présent)
+- Atteint **50 participants** en animant un atelier de cybersécurité web sur les vulnérabilités courantes et le code sécurisé
+- Amélioré la maintenabilité du site en développant la page d'accueil de la branche avec **Payload CMS** et **Next.js**
+- Offert du soutien pendant les événements techniques aux étudiants dans les deux langues officielles, **français** et **anglais**
+
 ### Analyste en cybersécurité @ De La Salle HS (Nov 2024 - Jan 2025)
 J'ai découvert **2 vulnérabilités critiques** affectant tous les systèmes connectés au réseau et dirigé le déploiement des correctifs. Création de 4 outils d'automatisation en Python, Go, C++ et C# pour les tests de sécurité.
 
@@ -31,6 +36,7 @@ Monétisation d'une application de bureau qui a atteint **1,5 M de téléchargem
 
 ## Projets notables
 
+- **Plussel** - Développement d'une API REST conteneurisée avec **FastAPI**, **Tortoise ORM** et **Docker**; implémentation de **OAuth**, **JWT** et RBAC sur **Supabase PostgreSQL**; interface bilingue **React/Tailwind** avec **i18n**
 - **[Entangle-Man](https://github.com/HumanThe2nd/Entangle-Man)** - 1ère place au hackathon Qiskit Fall Fest 2025. Jeu quantique interactif démontrant la superposition et l'intrication en utilisant Qiskit
 - **[Moteur d'échecs](https://github.com/uOttawa-Computer-Chess/uottawa-computer-chess-hackathon-2025-wabz)** - 2e place au hackathon d'échecs informatiques de l'uOttawa. Implémentation du minimax avec élagage alpha-bêta, tables de transposition et approfondissement itératif
 - **[Planificateur de cours uOttawa](https://github.com/waaberi/scheduleweb)** - Outil de planification de cours Next.js/TypeScript gérant des contraintes complexes comme les exigences linguistiques pour les bourses et les incohérences de base de données. [Démo en direct](https://scheduleweb-snowy.vercel.app/)

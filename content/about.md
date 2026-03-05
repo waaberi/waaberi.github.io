@@ -18,7 +18,16 @@ I have hands-on experience in penetration testing and vulnerability assessment. 
 
 **Skills:** Burp Suite, ZAP, Kali Linux, Pwntools
 
+### Data Science
+
+### Systems Development
+
 ## Experience Highlights
+
+### Software Developer & Technical Coordinator @ IEEE uOttawa Student Branch (Jan. 2026 -- Present)
+- Reached **50 participants** by delivering a web security workshop on common vulnerabilities and secure coding
+- Improved website maintainability by building the branch homepage with **Payload CMS** and **Next.js**
+- Provided support during technical events to students in both official languages, **French** and **English**
 
 ### Cybersecurity Analyst @ De La Salle HS (Nov 2024 - Jan 2025)
 Found **2 critical vulnerabilities** affecting all network-connected systems and led the patch rollout. Built 4 automation tools in Python, Go, C++, and C# for security testing.
@@ -31,6 +40,7 @@ Monetized a desktop application that reached **1.5M downloads** and generated **
 
 ## Notable Projects
 
+- **Plussel** - Built a containerized REST API with **FastAPI**, **Tortoise ORM**, and **Docker**; implemented **OAuth**, **JWT**, and RBAC on **Supabase PostgreSQL**; built a bilingual **React/Tailwind** frontend with **i18n**
 - **[Entangle-Man](https://github.com/HumanThe2nd/Entangle-Man)** - 1st place Qiskit Fall Fest 2025 hackathon winner. Interactive quantum game demonstrating superposition and entanglement using Qiskit
 - **[Chess Engine](https://github.com/uOttawa-Computer-Chess/uottawa-computer-chess-hackathon-2025-wabz)** - 2nd place uOttawa Computer Chess Hackathon. Implemented minimax with alpha-beta pruning, transposition tables, and iterative deepening
 - **[uOttawa Course Scheduler](https://github.com/waaberi/scheduleweb)** - Next.js/TypeScript course scheduling tool handling complex constraints like language requirements for scholarships and database inconsistencies. [Live demo](https://scheduleweb-snowy.vercel.app/)

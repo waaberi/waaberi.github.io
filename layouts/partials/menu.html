@@ -1,0 +1,47 @@
+<nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    {{ if or $.Site.Params.showMenuItems ( eq .Site.Params.showMenuItems 0 ) }}
+      {{ range first $.Site.Params.showMenuItems $.Site.Menus.main }}
+        {{ if not .HasChildren }}
+          <li><a href="{{ .URL }}" {{ if .Params.NewTab -}} target="_blank" {{- end }}>{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }}
+      {{ if gt (len $.Site.Menus.main) $.Site.Params.showMenuItems }}
+        <li>
+          <ul class="menu">
+            <li class="menu__trigger">{{ $.Site.Params.menuMore }}&nbsp;▾</li>
+            <li>
+              <ul class="menu__dropdown">
+                {{ range last (sub (len $.Site.Menus.main) $.Site.Params.showMenuItems) $.Site.Menus.main }}
+                  {{ if not .HasChildren }}
+                    <li><a href="{{ .URL }}" {{ if .Params.NewTab -}} target="_blank" {{- end }}>{{ .Name }}</a></li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </li>
+          </ul>
+        </li>
+      {{ end }}
+    {{ else }}
+      {{ range $.Site.Menus.main }}
+        {{ if not .HasChildren }}
+          <li><a href="{{ .URL }}" {{ if .Params.NewTab -}} target="_blank" {{- end }}>{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Social links (GitHub / LinkedIn) rendered if provided in site params */}}
+    {{ if or $.Site.Params.github $.Site.Params.linkedin }}
+      <li class="navigation-menu__social">
+        <ul class="social-list">
+          {{ if $.Site.Params.github }}
+            <li class="social-list__item"><a href="{{ $.Site.Params.github }}" target="_blank" rel="noopener">GitHub</a></li>
+          {{ end }}
+          {{ if $.Site.Params.linkedin }}
+            <li class="social-list__item"><a href="{{ $.Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
