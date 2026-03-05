@@ -4,6 +4,8 @@ title: "$ whoami"
 
 Hey there! I'm **Waaberi Ibrahim**, a first-year Software Engineering student at the University of Ottawa passionate about building impactful and secure software.
 
+This website is currently being updated. Some content may be missing.
+
 ## What I do
 
 ```bash
