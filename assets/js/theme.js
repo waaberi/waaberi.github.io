@@ -2,35 +2,48 @@
   const root = document.documentElement;
   const system = window.matchMedia("(prefers-color-scheme: dark)");
   const storageKey = "portfolio-theme";
-  let selection = null;
+  let selection = "system";
 
   try {
     const stored = localStorage.getItem(storageKey);
     if (stored === "light" || stored === "dark") selection = stored;
   } catch {
-    // The toggle still works when browser storage is unavailable.
+    // Theme selection still works when browser storage is unavailable.
   }
 
   const applyTheme = () => {
-    const theme = selection || (system.matches ? "dark" : "light");
+    const theme = selection === "system" ? (system.matches ? "dark" : "light") : selection;
     root.dataset.theme = theme;
-    const toggle = document.getElementById("theme-toggle");
-    if (toggle) toggle.setAttribute("aria-pressed", String(theme === "dark"));
+    const select = document.getElementById("theme-select");
+    if (select) {
+      select.value = selection;
+      const background = getComputedStyle(root).getPropertyValue("--paper").trim();
+      document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
+        meta.content = background;
+      });
+    }
   };
 
   // Apply a saved choice before the page is painted.
   applyTheme();
   system.addEventListener("change", applyTheme);
+  window.addEventListener("storage", (event) => {
+    if (event.key === storageKey || event.key === null) {
+      selection = event.newValue === "light" || event.newValue === "dark" ? event.newValue : "system";
+      applyTheme();
+    }
+  });
 
   document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("theme-toggle");
-    if (!toggle) return;
+    const select = document.getElementById("theme-select");
+    if (!select) return;
     applyTheme();
-    toggle.hidden = false;
-    toggle.addEventListener("click", () => {
-      selection = root.dataset.theme === "dark" ? "light" : "dark";
+    select.closest(".theme-control").hidden = false;
+    select.addEventListener("change", () => {
+      selection = select.value;
       try {
-        localStorage.setItem(storageKey, selection);
+        if (selection === "system") localStorage.removeItem(storageKey);
+        else localStorage.setItem(storageKey, selection);
       } catch {
         // Keep the in-page preference even if it cannot be saved.
       }

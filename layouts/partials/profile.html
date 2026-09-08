@@ -15,6 +15,13 @@
   </nav>
   <div class="preferences">
     {{ partial "language-menu.html" . }}
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" hidden>{{ .Site.Home.Params.darkModeLabel }}</button>
+    <div class="theme-control" hidden>
+      <label for="theme-select">{{ .Site.Home.Params.themeLabel }}</label>
+      <select id="theme-select" name="theme">
+        <option value="system">{{ .Site.Home.Params.systemThemeLabel }}</option>
+        <option value="light">{{ .Site.Home.Params.lightThemeLabel }}</option>
+        <option value="dark">{{ .Site.Home.Params.darkThemeLabel }}</option>
+      </select>
+    </div>
   </div>
 </header>

@@ -8,16 +8,16 @@
 
 :root {
   color-scheme: light;
-  --paper: #faf9f6;
-  --ink: #111722;
-  --muted: #5d6470;
-  --accent: #b10e24;
-  --section-ink: #414956;
-  --rule: #dad6d0;
-  --selection: #f0dadd;
+  --paper: #f8f7f4;
+  --ink: #242628;
+  --muted: #50545b;
+  --accent: #376a91;
+  --section-ink: #50545b;
+  --rule: #d6d5d0;
+  --selection: #93bfe3;
   --font: "Fira Code", ui-monospace, "Cascadia Code", "DejaVu Sans Mono", monospace;
   background: var(--paper);
-  color: var(--ink);
+  color: var(--muted);
   font-family: var(--font);
   font-size: 18px;
   line-height: 1.65;
@@ -31,42 +31,41 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --paper: #191a1c;
-    --ink: #ede9e2;
-    --muted: #b7bac1;
-    --accent: #f18a99;
-    --section-ink: #c4c7ce;
-    --rule: #45464a;
-    --selection: #56313b;
+    --paper: #202122;
+    --ink: #f0f0ef;
+    --muted: #bdc1c7;
+    --accent: #93bfe3;
+    --section-ink: #bdc1c7;
+    --rule: #484a4c;
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #191a1c;
-  --ink: #ede9e2;
-  --muted: #b7bac1;
-  --accent: #f18a99;
-  --section-ink: #c4c7ce;
-  --rule: #45464a;
-  --selection: #56313b;
+  --paper: #202122;
+  --ink: #f0f0ef;
+  --muted: #bdc1c7;
+  --accent: #93bfe3;
+  --section-ink: #bdc1c7;
+  --rule: #484a4c;
 }
 
 * { box-sizing: border-box; }
 body { margin: 0; }
 h1, h2, h3, p, ul { margin: 0; }
+h1, h3, .name, .prose h2, .prose strong { color: var(--ink); }
 a {
   color: var(--accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 a:hover { color: var(--ink); }
-a:focus-visible, button:focus-visible {
+a:focus-visible, select:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 5px;
   border-radius: 1px;
 }
-::selection { background: var(--selection); }
+::selection { background: var(--selection); color: #202122; }
 
 .portfolio {
   display: grid;
@@ -94,23 +93,24 @@ a:focus-visible, button:focus-visible {
 .languages { font-size: 16px; }
 .languages ul { display: flex; align-items: center; }
 .languages li + li::before { content: "/"; color: var(--muted); margin-inline: 9px; }
-.languages a { color: var(--muted); }
-.languages a[aria-current="page"], .languages a:hover { color: var(--accent); }
-.theme-toggle {
-  min-height: 44px;
-  padding: 8px 4px;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  font: inherit;
+.languages a { color: var(--accent); }
+.languages a:hover { color: var(--ink); }
+.theme-control:not([hidden]) {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   font-size: 16px;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+}
+.theme-control select {
+  font: inherit;
+  color: var(--accent);
+  background: var(--paper);
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  padding: 2px 0;
   cursor: pointer;
 }
-.theme-toggle[aria-pressed="true"] { color: var(--accent); }
-.theme-toggle:hover { color: var(--ink); }
 main { min-width: 0; }
 main:focus { outline: none; }
 .section + .section { margin-top: 68px; }
@@ -191,7 +191,7 @@ main:focus { outline: none; }
   .contact a { display: inline-block; min-height: 40px; }
   .contact li + li { margin-top: 0; }
   .preferences { margin-top: 27px; }
-  .languages, .theme-toggle { font-size: 14px; }
+  .languages, .theme-control:not([hidden]) { font-size: 14px; }
   .languages a { display: inline-block; padding-block: 8px; }
   .section + .section { margin-top: 46px; }
   .section-label { font-size: 14px; line-height: 1.7; margin-bottom: 22px; }
@@ -209,7 +209,7 @@ main:focus { outline: none; }
 
 @media print {
   .portfolio { width: 100%; padding: 0; grid-template-columns: 220px minmax(0, 1fr); gap: 40px; }
-  :root, :root[data-theme] { color-scheme: light; background: white; color: black; --muted: #444; --section-ink: #333; --rule: #ccc; }
+  :root, :root[data-theme] { color-scheme: light; --paper: #f8f7f4; --ink: #242628; --muted: #50545b; --accent: #376a91; --section-ink: #50545b; --rule: #d6d5d0; }
   .skip-link, .preferences, .back-link { display: none; }
   .section, .entries li { break-inside: avoid; }
   a { color: inherit; }
