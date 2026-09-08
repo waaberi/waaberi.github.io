@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-Latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --paper: #faf9f6;
@@ -7,10 +15,14 @@
   --section-ink: #414956;
   --rule: #dad6d0;
   --selection: #f0dadd;
-  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font: "Fira Code", ui-monospace, "Cascadia Code", "DejaVu Sans Mono", monospace;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Times New Roman", Times, "Liberation Serif", serif;
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 400;
+  font-variant-ligatures: none;
   font-synthesis: none;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -65,21 +77,21 @@ a:focus-visible, button:focus-visible {
   padding-block: clamp(80px, 12vw, 160px) 100px;
 }
 .name {
-  font-size: 50px;
-  line-height: 1.06;
+  font-size: 44px;
+  line-height: 1.4;
   font-weight: 400;
-  letter-spacing: -0.8px;
+  letter-spacing: 0.01em;
   margin-bottom: 31px;
 }
 .name a { color: inherit; text-decoration: none; }
-.bio { font-size: 26px; line-height: 1.3; }
+.bio { font-size: 18px; line-height: 1.7; }
 .bio p + p { margin-top: 24px; }
-.contact { margin-top: 46px; font-size: 26px; line-height: 1.45; }
+.contact { margin-top: 46px; font-size: 18px; line-height: 1.65; }
 .contact ul, .languages ul, .entries { list-style: none; padding: 0; }
 .contact li + li { margin-top: 4px; }
-.arrow { white-space: nowrap; font-family: var(--sans); font-size: 0.86em; }
+.arrow { white-space: nowrap; font-family: var(--font); font-size: 1em; }
 .preferences { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 38px; }
-.languages { font-size: 20px; }
+.languages { font-size: 16px; }
 .languages ul { display: flex; align-items: center; }
 .languages li + li::before { content: "/"; color: var(--muted); margin-inline: 9px; }
 .languages a { color: var(--muted); }
@@ -91,7 +103,7 @@ a:focus-visible, button:focus-visible {
   background: transparent;
   color: var(--muted);
   font: inherit;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -105,15 +117,15 @@ main:focus { outline: none; }
 .section-label {
   margin-bottom: 29px;
   color: var(--section-ink);
-  font-family: var(--sans);
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: normal;
+  text-transform: none;
 }
 .entries { display: grid; gap: 27px; }
-.entries h3 { font-size: 32px; font-weight: 400; line-height: 1.2; letter-spacing: -0.35px; }
+.entries h3 { font-size: 20px; font-weight: 400; line-height: 1.6; letter-spacing: normal; }
 .experience .entries { gap: 38px; }
 .experience-entry {
   display: grid;
@@ -123,74 +135,76 @@ main:focus { outline: none; }
 }
 .role, .period {
   color: var(--muted);
-  font-family: var(--sans);
-  font-size: 20px;
+  font-family: var(--font);
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 .role { margin-top: 3px; }
-.period { white-space: nowrap; text-align: right; }
-.project-description { margin-top: 4px; font-size: 24px; line-height: 1.4; }
-.more { margin-top: 43px; font-size: 20px; line-height: 1.5; }
+.period { white-space: nowrap; text-align: right; font-size: 17px; }
+.project-description { margin-top: 4px; font-size: 18px; line-height: 1.65; }
+.more { margin-top: 43px; font-size: 16px; line-height: 1.65; }
 .skip-link {
   position: absolute;
   top: 16px;
   left: 16px;
   padding: 10px 14px;
   background: var(--paper);
-  font-family: var(--sans);
+  font-family: var(--font);
   transform: translateY(-200%);
 }
 .skip-link:focus { transform: translateY(0); }
 
-.page { font-size: 22px; line-height: 1.55; }
-.page h1 { margin-block: 28px 36px; font-size: 44px; line-height: 1.15; font-weight: 400; }
-.back-link { font-size: 18px; }
+.page { font-size: 18px; line-height: 1.65; }
+.page h1 { margin-block: 28px 36px; font-size: 36px; line-height: 1.35; font-weight: 400; }
+.back-link { font-size: 16px; }
 .prose { overflow-wrap: anywhere; }
-.prose h2 { margin-block: 48px 20px; font-size: 31px; line-height: 1.2; font-weight: 400; }
-.prose h3 { margin-block: 30px 14px; font-size: 25px; line-height: 1.3; font-weight: 400; }
+.prose h2 { margin-block: 48px 20px; font-size: 24px; line-height: 1.65; font-weight: 400; }
+.prose h3 { margin-block: 30px 14px; font-size: 20px; line-height: 1.65; font-weight: 400; }
 .prose p, .prose ul { margin-block: 18px; }
 .prose ul { padding-left: 24px; }
 .prose li + li { margin-top: 10px; }
-.prose strong { font-weight: 700; }
+.prose strong { font-weight: 500; }
 .prose hr { margin-block: 40px; border: 0; border-top: 1px solid var(--rule); }
 .prose img, .prose iframe, .prose video { max-width: 100%; }
-.prose pre { overflow-x: auto; font-size: 0.75em; }
+.prose pre { overflow-x: auto; }
+.prose code { font-family: inherit; }
 
 @media (max-width: 1100px) {
   .portfolio { grid-template-columns: 240px minmax(0, 1fr); gap: 64px; }
-  .bio, .contact { font-size: 24px; }
   .experience-entry { grid-template-columns: 1fr; gap: 4px; }
-  .period { font-size: 17px; text-align: left; }
+  .period { font-size: 15px; text-align: left; }
 }
 
 @media (max-width: 760px) {
+  :root { font-size: 15px; line-height: 1.7; }
   .portfolio {
     grid-template-columns: minmax(0, 1fr);
     gap: 58px;
     width: min(540px, calc(100% - 48px));
     padding-block: 54px 60px;
   }
-  .name { font-size: 46px; margin-bottom: 25px; }
-  .bio { max-width: 340px; font-size: 23px; }
+  .name { font-size: clamp(26px, 6.7vw, 36px); margin-bottom: 25px; }
+  .bio { max-width: 340px; font-size: 15px; line-height: 1.8; }
   .bio p + p { margin-top: 20px; }
-  .contact { margin-top: 28px; font-size: 23px; }
+  .contact { margin-top: 28px; font-size: 15px; line-height: 1.7; }
   .contact a { display: inline-block; min-height: 40px; }
   .contact li + li { margin-top: 0; }
   .preferences { margin-top: 27px; }
-  .languages { font-size: 18px; }
+  .languages, .theme-toggle { font-size: 14px; }
   .languages a { display: inline-block; padding-block: 8px; }
   .section + .section { margin-top: 46px; }
-  .section-label { font-size: 14px; letter-spacing: 1.7px; margin-bottom: 22px; }
-  .entries h3 { font-size: 28px; }
+  .section-label { font-size: 14px; line-height: 1.7; margin-bottom: 22px; }
+  .entries h3 { font-size: 17px; }
   .entries, .experience .entries { gap: 27px; }
-  .role { font-size: 18px; }
-  .project-description { font-size: 21px; }
-  .more { margin-top: 34px; font-size: 18px; }
-  .page { font-size: 20px; }
-  .page h1 { font-size: 38px; }
-  .prose h2 { font-size: 28px; }
-  .prose h3 { font-size: 23px; }
+  .role { font-size: 15px; line-height: 1.7; }
+  .project-description { font-size: 15px; line-height: 1.7; }
+  .more { margin-top: 34px; font-size: 14px; }
+  .page { font-size: 15px; line-height: 1.7; }
+  .page h1 { font-size: 28px; }
+  .prose h2 { font-size: 21px; line-height: 1.7; }
+  .prose h3 { font-size: 18px; line-height: 1.7; }
+  .back-link { font-size: 14px; }
 }
 
 @media print {

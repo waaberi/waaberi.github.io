@@ -19,6 +19,7 @@
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:site_name" content="Waaberi Ibrahim">
     <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="preload" href="{{ "fonts/FiraCode-Latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
     {{ $style := resources.Get "css/portfolio.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   </head>
