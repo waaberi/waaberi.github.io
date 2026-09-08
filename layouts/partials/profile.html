@@ -13,5 +13,8 @@
       <li><a href="{{ .Site.Home.Params.resume | relURL }}">{{ .Site.Home.Params.resumeLabel }} <span class="arrow" aria-hidden="true">↗</span></a></li>
     </ul>
   </nav>
-  {{ partial "language-menu.html" . }}
+  <div class="preferences">
+    {{ partial "language-menu.html" . }}
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" hidden>{{ .Site.Home.Params.darkModeLabel }}</button>
+  </div>
 </header>
