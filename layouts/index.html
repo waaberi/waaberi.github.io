@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <section class="section experience" aria-labelledby="experience-heading">
+    <h2 class="section-label" id="experience-heading">{{ .Params.experienceTitle }}</h2>
+    <ul class="entries">
+      {{ range .Params.experience }}
+        <li class="experience-entry">
+          <div>
+            <h3>{{ .organization }}</h3>
+            <p class="role">{{ .role }}</p>
+          </div>
+          <p class="period">{{ .period }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  <section class="section projects" aria-labelledby="projects-heading">
+    <h2 class="section-label" id="projects-heading">{{ .Params.projectsTitle }}</h2>
+    <ul class="entries">
+      {{ range .Params.projects }}
+        <li>
+          <h3><a href="{{ .url }}">{{ .name }} <span class="arrow" aria-hidden="true">↗</span></a></h3>
+          <p class="project-description">{{ .description }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  <section class="section community" aria-labelledby="community-heading">
+    <h2 class="section-label" id="community-heading">{{ .Params.communityTitle }}</h2>
+    <ul class="entries">
+      {{ range .Params.community }}
+        <li>
+          <h3>{{ .organization }}</h3>
+          <p class="role">{{ .role }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ with .Site.GetPage "/about" }}
+    <p class="more"><a href="{{ .RelPermalink }}">{{ $.Params.moreLabel }} <span aria-hidden="true">→</span></a></p>
+  {{ end }}
+{{ end }}

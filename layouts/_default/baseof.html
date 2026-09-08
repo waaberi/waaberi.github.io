@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} · Waaberi Ibrahim{{ end }}</title>
+    {{ $description := .Description | default .Site.Home.Description }}
+    <meta name="description" content="{{ $description }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ range .AllTranslations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="Waaberi Ibrahim">
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    {{ $style := resources.Get "css/portfolio.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{{ .Site.Home.Params.skipLink }}</a>
+    <div class="portfolio">
+      {{ partial "profile.html" . }}
+      <main id="main" tabindex="-1">
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+  </body>
+</html>

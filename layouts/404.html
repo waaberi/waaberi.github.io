@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <article class="page">
+    <p class="section-label">404</p>
+    <h1>{{ .Site.Home.Params.notFoundTitle }}</h1>
+    <p>{{ .Site.Home.Params.notFoundText }}</p>
+    <p class="more"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Home.Params.homeLabel }} <span aria-hidden="true">→</span></a></p>
+  </article>
+{{ end }}

@@ -3,9 +3,8 @@ relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-# Add it only if you keep the theme in the `themes` directory.
-# Remove it if you use the theme as a remote Hugo Module.
-theme = "terminal"
+# The portfolio uses the project’s own layouts and styles.
+disableKinds = ["taxonomy", "term"]
 pagination.pagerSize = 5
 
 # Required for Chroma and the custom syntax highlighting.
@@ -26,6 +25,7 @@ pagination.pagerSize = 5
   # Social/profile links (set to your profile URLs)
   github = "https://github.com/waaberi"
   linkedin = "https://www.linkedin.com/in/waaberi"
+  email = "wibra007@uottawa.ca"
 
   # set theme to full screen width
   fullWidthTheme = false
@@ -80,8 +80,9 @@ pagination.pagerSize = 5
 
 [languages]
   [languages.en]
-    languageName = "English"
+    label = "English"
     title = "Waaberi"
+    weight = 1
 
     [languages.en.params]
       subtitle = "Software Engineering Student | Full-Stack Dev | Cybersecurity Enthusiast"
@@ -113,7 +114,7 @@ pagination.pagerSize = 5
           url = "/resume.pdf"
 
   [languages.fr]
-    languageName = "Français"
+    label = "Français"
     title = "Waaberi"
     weight = 2
 

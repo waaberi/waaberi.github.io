@@ -1,5 +1,15 @@
-<ul class="menu menu--desktop menu--language-selector">
-  {{ range .Translations }}
-    <li class="menu__trigger"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-  {{ end }}
-</ul>
+{{ $page := . }}
+<nav class="languages" aria-label="{{ .Site.Home.Params.languageLabel }}">
+  <ul>
+    {{ range hugo.Sites }}
+      {{ $language := .Language.Lang }}
+      {{ $target := .Home }}
+      {{ range $page.AllTranslations }}
+        {{ if eq .Language.Lang $language }}{{ $target = . }}{{ end }}
+      {{ end }}
+      <li>
+        <a href="{{ $target.RelPermalink }}" lang="{{ $language }}" hreflang="{{ $language }}" aria-label="{{ .Language.Label }}"{{ if eq $page.Language.Lang $language }} aria-current="page"{{ end }}>{{ upper $language }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
