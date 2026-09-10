@@ -88,6 +88,9 @@ a:focus-visible, select:focus-visible {
 .contact { margin-top: 46px; font-size: 18px; line-height: 1.65; }
 .contact ul, .languages ul, .entries { list-style: none; padding: 0; }
 .contact li + li { margin-top: 4px; }
+.site-nav { margin-top: 24px; font-size: 18px; }
+.site-nav a[aria-current] { color: var(--ink); }
+.site-nav + .contact { margin-top: 28px; }
 .arrow { white-space: nowrap; font-family: var(--font); font-size: 1em; }
 .preferences { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 38px; }
 .languages { font-size: 16px; }
@@ -170,6 +173,35 @@ main:focus { outline: none; }
 .prose pre { overflow-x: auto; }
 .prose code { font-family: inherit; }
 
+.blog-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
+.feed-link, .post-meta, .blog-pagination, .post-footer { font-size: 14px; }
+.post-list { list-style: none; padding: 0; }
+.post-list li { border-top: 1px solid var(--rule); padding-block: 28px; }
+.post-list h2 { margin-block: 8px; font-size: 22px; font-weight: 400; line-height: 1.5; }
+.post-list p { margin-top: 8px; }
+.post-list .post-meta { margin-top: 0; }
+.post-meta { color: var(--muted); }
+.blog-empty { border-top: 1px solid var(--rule); padding-top: 28px; }
+.blog-pagination { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; border-top: 1px solid var(--rule); padding-top: 28px; }
+.blog-pagination a[rel="next"] { margin-left: auto; }
+.blog-index, .post { overflow-wrap: anywhere; }
+.post-heading { margin-bottom: 36px; }
+.post-heading h1 { margin-bottom: 16px; }
+.post-footer { border-top: 1px solid var(--rule); margin-top: 56px; padding-top: 24px; }
+.post .prose { line-height: 1.85; }
+.post .prose ol { padding-left: 24px; margin-block: 18px; }
+.post .prose blockquote { margin: 28px 0; padding-left: 20px; border-left: 2px solid var(--accent); }
+.post .prose pre { border: 1px solid var(--rule); padding: 20px; font-size: 0.85em; line-height: 1.7; tab-size: 2; }
+.post .prose :not(pre) > code { color: var(--ink); font-size: 0.9em; }
+.post .prose pre code { white-space: pre; overflow-wrap: normal; }
+.post .prose .chroma { color: var(--ink); background: var(--paper); }
+.post .prose .chroma :is(.k, .kc, .kd, .kn, .kp, .kr, .kt, .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sr, .ss, .m, .mi, .mf) { color: var(--accent); }
+.post .prose .chroma :is(.c, .c1, .cm, .cp, .cs) { color: var(--muted); }
+.post .prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin-block: 28px; font-size: 0.9em; }
+.post .prose th, .post .prose td { border-bottom: 1px solid var(--rule); padding: 10px 14px; text-align: left; }
+.post .prose th { color: var(--ink); font-weight: 500; }
+.post .prose img { height: auto; }
+
 @media (max-width: 1100px) {
   .portfolio { grid-template-columns: 240px minmax(0, 1fr); gap: 64px; }
   .experience-entry { grid-template-columns: 1fr; gap: 4px; }
@@ -190,6 +222,8 @@ main:focus { outline: none; }
   .contact { margin-top: 28px; font-size: 15px; line-height: 1.7; }
   .contact a { display: inline-block; min-height: 40px; }
   .contact li + li { margin-top: 0; }
+  .site-nav { margin-top: 20px; font-size: 15px; }
+  .site-nav a { display: inline-block; padding-block: 8px; }
   .preferences { margin-top: 27px; }
   .languages, .theme-control:not([hidden]) { font-size: 14px; }
   .languages a { display: inline-block; padding-block: 8px; }
@@ -205,6 +239,14 @@ main:focus { outline: none; }
   .prose h2 { font-size: 21px; line-height: 1.7; }
   .prose h3 { font-size: 18px; line-height: 1.7; }
   .back-link { font-size: 14px; }
+  .post-list h2 { font-size: 19px; }
+  .post-list li { padding-block: 24px; }
+  .post .prose pre { padding: 14px; }
+  .portfolio--blog { gap: 36px; padding-top: 32px; }
+  .portfolio--blog .bio, .portfolio--blog .contact { display: none; }
+  .portfolio--blog .name { margin-bottom: 12px; }
+  .portfolio--blog .site-nav { margin-top: 0; }
+  .portfolio--blog .preferences { margin-top: 12px; }
 }
 
 @media print {

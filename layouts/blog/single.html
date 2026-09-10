@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ $blog := .Site.GetPage "/blog" }}
+  <article class="page post">
+    <a class="back-link" href="{{ $blog.RelPermalink }}"><span aria-hidden="true">←</span> {{ $blog.Params.backLabel }}</a>
+    <header class="post-heading">
+      <h1>{{ .Title }}</h1>
+      {{ partial "post-date.html" . }}
+      {{ if .Draft }}<p class="post-meta">{{ $blog.Params.draftLabel }}</p>{{ end }}
+    </header>
+    <div class="prose">{{ .Content }}</div>
+    <footer class="post-footer">
+      <a href="{{ $blog.RelPermalink }}"><span aria-hidden="true">←</span> {{ $blog.Params.backLabel }}</a>
+    </footer>
+  </article>
+{{ end }}

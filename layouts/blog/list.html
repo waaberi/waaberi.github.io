@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <section class="page blog-index" aria-labelledby="blog-title">
+    <a class="back-link" href="{{ .Site.Home.RelPermalink }}"><span aria-hidden="true">←</span> {{ .Site.Home.Params.homeLabel }}</a>
+    <div class="blog-heading">
+      <h1 id="blog-title">{{ .Title }}</h1>
+      {{ with .OutputFormats.Get "RSS" }}<a class="feed-link" href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </div>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+    {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+    <ul class="post-list">
+      {{ range $paginator.Pages }}
+        <li>
+          <article>
+            {{ partial "post-date.html" . }}
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+            {{ if .Draft }}<p class="post-meta">{{ $.Params.draftLabel }}</p>{{ end }}
+          </article>
+        </li>
+      {{ end }}
+    </ul>
+    {{ if not $paginator.Pages }}<p class="blog-empty">{{ .Params.emptyLabel }}</p>{{ end }}
+    {{ if gt $paginator.TotalPages 1 }}
+      <nav class="blog-pagination" aria-label="{{ .Params.paginationLabel }}">
+        {{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}" rel="prev"><span aria-hidden="true">←</span> {{ .Params.newerLabel }}</a>{{ end }}
+        {{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}" rel="next">{{ .Params.olderLabel }} <span aria-hidden="true">→</span></a>{{ end }}
+      </nav>
+    {{ end }}
+  </section>
+{{ end }}

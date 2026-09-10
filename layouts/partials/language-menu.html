@@ -4,6 +4,9 @@
     {{ range hugo.Sites }}
       {{ $language := .Language.Lang }}
       {{ $target := .Home }}
+      {{ if eq $page.Section "blog" }}
+        {{ with .GetPage "/blog" }}{{ $target = . }}{{ end }}
+      {{ end }}
       {{ range $page.AllTranslations }}
         {{ if eq .Language.Lang $language }}{{ $target = . }}{{ end }}
       {{ end }}

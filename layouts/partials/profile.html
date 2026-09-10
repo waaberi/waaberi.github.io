@@ -5,6 +5,11 @@
     <p class="name"><a href="{{ .Site.Home.RelPermalink }}" aria-label="Waaberi Ibrahim — {{ .Site.Home.Params.homeLabel }}">Waaberi<br>Ibrahim</a></p>
   {{ end }}
   <div class="bio">{{ .Site.Home.Content }}</div>
+  {{ with .Site.GetPage "/blog" }}
+    <nav class="site-nav" aria-label="{{ $.Site.Home.Params.navigationLabel }}">
+      <a href="{{ .RelPermalink }}"{{ if eq $.Section "blog" }} aria-current="{{ if $.IsSection }}page{{ else }}location{{ end }}"{{ end }}>{{ .Title }} <span aria-hidden="true">→</span></a>
+    </nav>
+  {{ end }}
   <nav class="contact" aria-label="{{ .Site.Home.Params.contactLabel }}">
     <ul>
       <li><a href="{{ .Site.Params.github }}">GitHub <span class="arrow" aria-hidden="true">↗</span></a></li>
