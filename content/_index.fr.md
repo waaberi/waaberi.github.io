@@ -20,10 +20,10 @@ experienceTitle: "Expérience"
 experience:
   - organization: "Statistique Canada"
     role: "Stagiaire en génie logiciel (coop)"
-    period: "Mai–août 2026"
+    period: "Mai à décembre 2026"
   - organization: "Université d’Ottawa"
     role: "Assistant de recherche"
-    period: "Mai 2026–présent"
+    period: "Depuis mai 2026"
 projectsTitle: "Projets"
 projects:
   - name: "Quark"

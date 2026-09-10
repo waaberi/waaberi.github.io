@@ -32,19 +32,19 @@ I enjoy real-time and low-level problem solving. I built Quark, a QNX-based driv
 
 ## Experience Highlights
 
-### Software Engineering Co-op/Intern @ Statistics Canada | Statistique Canada (May 2026 -- Aug. 2026)
+### Software Engineering Co-op/Intern @ Statistics Canada | Statistique Canada (May to December 2026)
 - Reached **hundreds of employees** with an award-winning **Gatsby/React** website for an introductory AI course
 - Automated chart styling with an **R** library that applies Statistics Canada publication standards
 - Saved **hundreds of hours** with a **Python** converter that turns legacy SCORM courses into editable H5P lessons
 - Built a **RAG-powered assistant** that answers training questions from approved documentation
 
-### Undergraduate Research Assistant, Health Devices @ University of Ottawa (May 2026 -- Present)
+### Undergraduate Research Assistant, Health Devices @ University of Ottawa (May 2026 to present)
 - Built a contactless monitoring platform that turns vital-sign and fall data into real-time alerts
 - Integrated live sensors over **MQTT** and structured their data for downstream workflows
 - Designed role-based response flows with protocol checks, medical sign-off, and audit logging
 - Automated deployment of the **Docker** stack with a **GitOps** workflow that ships on every commit
 
-### Webmaster @ IEEE uOttawa Student Branch (May 2026 -- Present)
+### Webmaster @ IEEE uOttawa Student Branch (May 2026 to present)
 Previously served as **Software Technical Coordinator** from Jan. 2026 to May 2026.
 
 - Own and deploy a live **Next.js/Payload CMS** site serving **4,000+ visits** and **20,000+ impressions** monthly
@@ -55,10 +55,10 @@ Previously served as **Software Technical Coordinator** from Jan. 2026 to May 20
 ### Software Developer @ uOttaHack
 Contributing to uOttaHack's software and technical projects.
 
-### Cybersecurity Analyst @ De La Salle HS (Nov 2024 - Jan 2025)
+### Cybersecurity Analyst @ De La Salle HS (November 2024 to January 2025)
 Found **2 critical vulnerabilities** affecting all network-connected systems and supported patch rollout. Built proof-of-concepts to validate exploitability and co-authored a vulnerability report ranking remediation by risk and implementation effort.
 
-### CS Tutor & Coding Club President (Sep 2023 - Jun 2025)
+### CS Tutor & Coding Club President (September 2023 to June 2025)
 Founded and led a computer science club where I ran **~40 sessions** and tutored **~50 students**. Ran DSA workshops and mock CCC contests, and created **20+ pages** of reusable documentation on Python, Supabase, Express, and React.
 
 ## Notable Projects

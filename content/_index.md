@@ -20,10 +20,10 @@ experienceTitle: "Experience"
 experience:
   - organization: "Statistics Canada"
     role: "Software Engineering Co-op/Intern"
-    period: "May–Aug 2026"
+    period: "May to December 2026"
   - organization: "University of Ottawa"
     role: "Undergraduate Research Assistant"
-    period: "May 2026–present"
+    period: "May 2026 to present"
 projectsTitle: "Projects"
 projects:
   - name: "Quark"

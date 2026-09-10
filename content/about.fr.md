@@ -32,19 +32,19 @@ J'apprécie les problèmes temps réel et bas niveau. J'ai développé Quark, un
 
 ## Expériences marquantes
 
-### Stagiaire en génie logiciel (coop) @ Statistique Canada | Statistics Canada (mai 2026 -- août 2026)
+### Stagiaire en génie logiciel (coop) @ Statistique Canada | Statistics Canada (mai à décembre 2026)
 - Formé **des centaines d'employés** grâce à un site **Gatsby/React** primé pour une initiation à l'IA
 - Automatisé la mise en forme de graphiques avec une bibliothèque **R** appliquant les normes de publication de Statistique Canada
 - Économisé **des centaines d'heures** grâce à un convertisseur **Python** transformant d'anciens cours SCORM en leçons H5P modifiables
 - Développé un **assistant RAG** qui répond aux questions de formation à partir de la documentation approuvée
 
-### Assistant de recherche, dispositifs de santé @ Université d'Ottawa (mai 2026 -- présent)
+### Assistant de recherche, dispositifs de santé @ Université d'Ottawa (depuis mai 2026)
 - Développé une plateforme de suivi sans contact qui transforme les signes vitaux et les chutes en alertes en temps réel
 - Intégré des capteurs en direct via **MQTT** et structuré leurs données pour les flux en aval
 - Conçu des flux d'intervention par rôle avec vérification des protocoles, approbation médicale et journal d'audit
 - Automatisé le déploiement de la pile **Docker** avec un flux **GitOps** exécuté à chaque commit
 
-### Webmestre @ IEEE uOttawa Student Branch (mai 2026 -- présent)
+### Webmestre @ IEEE uOttawa Student Branch (depuis mai 2026)
 Auparavant **coordonnateur technique logiciel** de janv. 2026 à mai 2026.
 
 - Géré et déployé un site **Next.js/Payload CMS** générant **4 000+ visites** et **20 000+ impressions** par mois
@@ -55,10 +55,10 @@ Auparavant **coordonnateur technique logiciel** de janv. 2026 à mai 2026.
 ### Développeur logiciel @ uOttaHack
 Contribution aux projets logiciels et techniques de uOttaHack.
 
-### Analyste en cybersécurité @ De La Salle HS (Nov 2024 - Jan 2025)
+### Analyste en cybersécurité @ De La Salle HS (novembre 2024 à janvier 2025)
 J'ai découvert **2 vulnérabilités critiques** affectant tous les systèmes connectés au réseau et soutenu le déploiement des correctifs. J'ai aussi conçu des preuves de concept pour valider l'exploitabilité et co-rédigé un rapport priorisant les correctifs par risque et effort.
 
-### Tuteur en informatique & Président du club de programmation (Sep 2023 - Jun 2025)
+### Tuteur en informatique & Président du club de programmation (septembre 2023 à juin 2025)
 Fondation et direction d'un club d'informatique où j'ai animé **~40 sessions** et tutoré **~50 étudiants**. J'ai aussi animé des ateliers DSA et des concours CCC simulés, puis rédigé plus de 20 pages de documentation réutilisable sur Python, Supabase, Express et React.
 
 ## Projets notables
