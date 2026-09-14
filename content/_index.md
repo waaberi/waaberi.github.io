@@ -19,11 +19,11 @@ notFoundText: "The page you’re looking for isn’t here."
 experienceTitle: "Experience"
 experience:
   - organization: "Statistics Canada"
-    role: "Software Engineering Co-op/Intern"
+    role: "Software Engineer Intern"
     period: "May to December 2026"
   - organization: "University of Ottawa"
     role: "Undergraduate Research Assistant"
-    period: "May 2026 to present"
+    period: "May 2026 to August 2026"
 projectsTitle: "Projects"
 projects:
   - name: "Quark"
@@ -39,8 +39,8 @@ communityTitle: "Community"
 community:
   - organization: "IEEE uOttawa"
     role: "Webmaster"
-  - organization: "uOttaHack"
-    role: "Software Developer"
+  # - organization: "uOttaHack"
+  #   role: "Software Developer"
 ---
 
 Software engineering student at the University of Ottawa.
