@@ -7,13 +7,6 @@
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
       {{ end }}
-      {{ if $.Site.Params.showLanguageSelector }}
-        {{ range .Translations }}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-          </li>
-        {{ end }}
-      {{ end }}
       {{/* Social links for mobile menu */}}
       {{ if or $.Site.Params.github $.Site.Params.linkedin }}
         <li class="menu__divider"></li>

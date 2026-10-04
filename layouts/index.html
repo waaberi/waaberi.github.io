@@ -5,7 +5,7 @@
       {{ range .Params.experience }}
         <li class="experience-entry">
           <div>
-            <h3>{{ .organization }}</h3>
+            <h3><a href="{{ .url }}">{{ .organization }} <span class="arrow" aria-hidden="true">↗</span></a></h3>
             <p class="role">{{ .role }}</p>
           </div>
           <p class="period">{{ .period }}</p>
@@ -29,13 +29,10 @@
     <ul class="entries">
       {{ range .Params.community }}
         <li>
-          <h3>{{ .organization }}</h3>
+          <h3><a href="{{ .url }}">{{ .organization }} <span class="arrow" aria-hidden="true">↗</span></a></h3>
           <p class="role">{{ .role }}</p>
         </li>
       {{ end }}
     </ul>
   </section>
-  {{ with .Site.GetPage "/about" }}
-    <p class="more"><a href="{{ .RelPermalink }}">{{ $.Params.moreLabel }} <span aria-hidden="true">→</span></a></p>
-  {{ end }}
 {{ end }}
