@@ -24,10 +24,10 @@ experience:
     url: "https://www.statcan.gc.ca/en/start"
     role: "Software Engineer Intern"
     period: "May to December 2026"
-  - organization: "CARG"
+  - organization: "Computational Analysis and Acceleration Research Group, University of Ottawa"
     url: "https://www.carg-uottawa.com/"
     role: "Undergraduate Research Assistant"
-    period: "May 2026 to August 2026"
+    period: "May to August 2026"
 projectsTitle: "Projects"
 projects:
   - name: "Quark"
